@@ -1,7 +1,7 @@
 const HOUSES = [
   {
-    id: 1,
-    designerId: 1,
+    id: 0,
+    designerId: 0,
     imageUrl: '../images/houses/01.jpeg',
     points: {
       sweetness: 5,
@@ -12,8 +12,8 @@ const HOUSES = [
     }
   },
   {
-    id: 2,
-    designerId: 2,
+    id: 1,
+    designerId: 1,
     imageUrl: '../images/houses/02.jpeg',
     points: {
       sweetness: 10,
@@ -24,8 +24,8 @@ const HOUSES = [
     }
   },
   {
-    id: 3,
-    designerId: 3,
+    id: 2,
+    designerId: 2,
     imageUrl: '../images/houses/03.jpeg',
     points: {
       sweetness: 8,
@@ -36,8 +36,8 @@ const HOUSES = [
     }
   },
   {
-    id: 4,
-    designerId: 4,
+    id: 3,
+    designerId: 3,
     imageUrl: '../images/houses/04.jpeg',
     points: {
       sweetness: 7,
@@ -48,8 +48,8 @@ const HOUSES = [
     }
   },
   {
-    id: 5,
-    designerId: 5,
+    id: 4,
+    designerId: 4,
     imageUrl: '../images/houses/05.jpeg',
     points: {
       sweetness: 2,
@@ -60,3 +60,5 @@ const HOUSES = [
     }
   }
 ]
+
+export default HOUSES;
