@@ -1,9 +1,11 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 import HOUSES from '../data/gingerbreadHouses';
 import HouseCard from './HouseCard';
 import Slideshow from './Slideshow';
 
 function Houses() {
+  const { id } = useParams();
   const houseComponents = HOUSES.map(
     house => <HouseCard key={house.id} data={house} />
   );
@@ -11,7 +13,7 @@ function Houses() {
   return (
     <main>
       <h1>Contest Entries</h1>
-      <Slideshow components={houseComponents} />
+      <Slideshow components={houseComponents} slideIndex={parseInt(id)} routeName='houses' />
     </main>
   );
 }

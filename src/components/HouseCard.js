@@ -16,6 +16,8 @@ function HouseCard({ data }) {
         return 'Construction';
       case '5th':
         return 'Cobble';
+      default:
+        return 'House';
     }
   }
 
@@ -34,7 +36,7 @@ function HouseCard({ data }) {
         <figcaption>{`${designer.name}'s ${designerId === 4 ? 'Cardboard' : 'Gingerbread'} ${getPlaceMessage(designer.placed)}`}</figcaption>
       </figure>
       <p>Materials : EMPTY</p>
-      <Link to='/contestants/'>Meet The Designer</Link>
+      <Link to={`/contestants/${designerId}`}>Meet The Designer</Link>
       <h3>Points : {getTotalPoints()}/50</h3>
       {pointBreakdown}
     </div>

@@ -11,7 +11,7 @@ function ContestantCard({ data }) {
         <img src={imageUrl} alt={`${name}'s portrait`} />
         <figcaption>{`${name}${imageCaption ? ` - ${imageCaption}` : ''}`}</figcaption>
       </figure>
-      <Link to='/houses'>See {`${name}'s`} House</Link>
+      <Link to={`/houses/${houseId}`}>See {`${name}'s`} House</Link>
       <p><em>{quote}</em> - {name}</p>
       <h3>Placed : {placed}</h3>
     </div>

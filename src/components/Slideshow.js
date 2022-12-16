@@ -1,19 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-function Slideshow({ components }) {
-  const [ currentSlide, setCurrentSlide ] = useState(0);
-
+function Slideshow({ components, slideIndex, routeName }) {
   const slideLocations = components.map(
-    (_, index) => <span key={`slide-index-${index}`}>{index === currentSlide ? ' O ' : ' o '}</span>
+    (_, index) => <span key={`slide-index-${index}`}>{index === slideIndex ? ' O ' : ' o '}</span>
   );
+  const navigate = useNavigate();
 
   function handleSlideChange(change) {
-    setCurrentSlide(currentSlide => (currentSlide += change) % components.length);
+    let newSlideIndex = (slideIndex + change) % components.length;
+    if (newSlideIndex < 0)
+      newSlideIndex = components.length - 1;
+    navigate(`/${routeName}/${newSlideIndex}`);
   }
 
   return (
     <div>
-      {components[currentSlide]}
+      {components[slideIndex]}
       <div>
         <button onClick={() => handleSlideChange(-1)}>{'<'}</button>
         {slideLocations}
