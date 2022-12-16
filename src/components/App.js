@@ -9,7 +9,7 @@ import Footer from './Footer';
 
 function App() {
   return (
-    <div>
+    <>
       <Header />
       <Routes>
         <Route path="/" element={<Home />}></Route>
@@ -17,7 +17,7 @@ function App() {
         <Route path="/houses/:id" element={<Houses />}></Route>
       </Routes>
       <Footer />
-    </div>
+    </>
   )
 }
 

@@ -30,16 +30,18 @@ function HouseCard({ data }) {
   );
 
   return (
-    <div>
+    <article className='card'>
       <figure>
         <img src={imageUrl} alt={`${designer.name}'s House`} />
         <figcaption>{`${designer.name}'s ${designerId === 4 ? 'Cardboard' : 'Gingerbread'} ${getPlaceMessage(designer.placed)}`}</figcaption>
       </figure>
-      <p>Materials : EMPTY</p>
-      <Link to={`/contestants/${designerId}`}>Meet The Designer</Link>
-      <h3>Points : {getTotalPoints()}/50</h3>
-      {pointBreakdown}
-    </div>
+      <div className='card-details'>
+        <p>Materials : EMPTY</p>
+        <Link to={`/contestants/${designerId}`}>Meet The Designer</Link>
+        <h3>Points : {getTotalPoints()}/50</h3>
+        {pointBreakdown}
+      </div>
+    </article>
   );
 }
 
