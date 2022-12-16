@@ -2,7 +2,7 @@ const CONTESTANTS = [
   {
     id: 0,
     name: 'Scott M.',
-    imageUrl: '../images/contestants/01.jpeg',
+    imageUrl: '/images/contestants/01.jpeg',
     houseId: 0,
     quote: 'Gingerbread house making is an art accessible to anyone, that is, assuming they have real gingerbread.',
     placed: '1st'
@@ -10,7 +10,7 @@ const CONTESTANTS = [
   {
     id: 1,
     name: 'Landen F.',
-    imageUrl: '../images/contestants/02.jpeg',
+    imageUrl: '/images/contestants/02.jpeg',
     houseId: 1,
     quote: '😂😂😂',
     placed: '4th'
@@ -18,7 +18,7 @@ const CONTESTANTS = [
   {
     id: 2,
     name: 'Ben K.',
-    imageUrl: '../images/contestants/03.jpeg',
+    imageUrl: '/images/contestants/03.jpeg',
     houseId: 2,
     quote: 'PLACEHOLDER',
     placed: '2nd'
@@ -26,7 +26,7 @@ const CONTESTANTS = [
   {
     id: 3,
     name: 'Sam Y.',
-    imageUrl: '../images/contestants/04.jpeg',
+    imageUrl: '/images/contestants/04.jpeg',
     houseId: 3,
     quote: 'Creativity and Google Images are not synonymous.',
     placed: '2nd'
