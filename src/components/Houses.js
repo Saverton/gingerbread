@@ -5,7 +5,7 @@ import Slideshow from './Slideshow';
 
 function Houses() {
   const houseComponents = HOUSES.map(
-    house => <HouseCard key={house.id} />
+    house => <HouseCard key={house.id} data={house} />
   );
 
   return (

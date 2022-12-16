@@ -5,7 +5,7 @@ import CONTESTANTS from '../data/contestants';
 
 function Contestants() {
   const contestantComponents = CONTESTANTS.map(
-    contestant => <ContestantCard key={contestant.id} />
+    contestant => <ContestantCard key={contestant.id} data={contestant} />
   )
 
   return (

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
-function Slides({ components }) {
+function Slideshow({ components }) {
   const [ currentSlide, setCurrentSlide ] = useState(0);
 
   const slideLocations = components.map(
-    (_, index) => <span>{index === currentSlide ? ' O ' : ' o '}</span>
+    (_, index) => <span key={`slide-index-${index}`}>{index === currentSlide ? ' O ' : ' o '}</span>
   );
 
   function handleSlideChange(change) {
@@ -23,4 +23,4 @@ function Slides({ components }) {
   )
 }
 
-export default Slides;
+export default Slideshow;
