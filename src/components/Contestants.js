@@ -1,7 +1,19 @@
 import React from 'react';
+import ContestantCard from './ContestantCard';
+import Slideshow from './Slideshow';
+import CONTESTANTS from '../data/contestants';
 
 function Contestants() {
-  return <h1>contestants</h1>
+  const contestantComponents = CONTESTANTS.map(
+    contestant => <ContestantCard key={contestant.id} />
+  )
+
+  return (
+    <main>
+      <h1>Meet the contestants</h1>
+      <Slideshow components={contestantComponents} />
+    </main>
+  );
 }
 
 export default Contestants;

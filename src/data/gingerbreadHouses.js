@@ -2,7 +2,7 @@ const HOUSES = [
   {
     id: 0,
     designerId: 0,
-    imageUrl: '../images/houses/01.jpeg',
+    imageUrl: './assets/images/houses/01.jpeg',
     points: {
       sweetness: 5,
       structuralEngineering: 4,
@@ -14,7 +14,7 @@ const HOUSES = [
   {
     id: 1,
     designerId: 1,
-    imageUrl: '../images/houses/02.jpeg',
+    imageUrl: './assets/images/houses/02.jpeg',
     points: {
       sweetness: 10,
       structuralEngineering: 4,
@@ -26,7 +26,7 @@ const HOUSES = [
   {
     id: 2,
     designerId: 2,
-    imageUrl: '../images/houses/03.jpeg',
+    imageUrl: './assets/images/houses/03.jpeg',
     points: {
       sweetness: 8,
       structuralEngineering: 2,
@@ -38,7 +38,7 @@ const HOUSES = [
   {
     id: 3,
     designerId: 3,
-    imageUrl: '../images/houses/04.jpeg',
+    imageUrl: './assets/images/houses/04.jpeg',
     points: {
       sweetness: 7,
       structuralEngineering: 5,
@@ -50,7 +50,7 @@ const HOUSES = [
   {
     id: 4,
     designerId: 4,
-    imageUrl: '../images/houses/05.jpeg',
+    imageUrl: './assets/images/houses/05.jpeg',
     points: {
       sweetness: 2,
       structuralEngineering: 10,

@@ -6,9 +6,9 @@ function Header() {
     <header>
       <h1>The Great 2022 Gingerbread Tournament</h1>
       <nav>
-        <NavLink to='/'>Home</NavLink>
-        <NavLink to='/contestants/1'>Contestants</NavLink>
-        <NavLink to='/houses/1'>Gingerbread Houses</NavLink>
+        <NavLink to='/'> - Home - </NavLink>
+        <NavLink to='/contestants'> - Contestants - </NavLink>
+        <NavLink to='/houses'> - Gingerbread Houses - </NavLink>
       </nav>
     </header>
   );

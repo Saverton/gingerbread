@@ -10,7 +10,7 @@ function Home() {
     <main>
       <h2>Meet the winner...</h2>
       <figure>
-        <img src={winHouse.imageUrl} />
+        <img src={winHouse.imageUrl} alt={`${winContestant.name}'s winning house!`}/>
         <figcaption>{`${winContestant.name}'s gingerbread masterpiece`}</figcaption>
       </figure>
       <h2>About</h2>

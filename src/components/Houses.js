@@ -1,7 +1,19 @@
 import React from 'react';
+import HOUSES from '../data/gingerbreadHouses';
+import HouseCard from './HouseCard';
+import Slideshow from './Slideshow';
 
 function Houses() {
-  return <h1>Houses</h1>
+  const houseComponents = HOUSES.map(
+    house => <HouseCard key={house.id} />
+  );
+
+  return (
+    <main>
+      <h1>Contest Entries</h1>
+      <Slideshow components={houseComponents} />
+    </main>
+  );
 }
 
 export default Houses;
