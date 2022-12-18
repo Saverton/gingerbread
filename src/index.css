@@ -36,8 +36,16 @@ nav {
   margin: 0.5em 0px;
 }
 
-nav a {
+a, button {
   color: var(--frosting-white);
+  transition: 0.5s;
+}
+
+a:hover {
+  font-size: 1.25em;
+}
+
+nav a {
   width: 20%;
   padding: 0.5em;
   text-align: center;
@@ -67,7 +75,8 @@ img {
   border-radius: 0.5em;
   border: 5px dotted var(--frosting-white);
   width: 400px;
-  height: 600px;
+  max-width: 100%;
+  max-height: 600px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -93,11 +102,17 @@ button {
   font-family: inherit;
   font-size: 1.5em;
   padding: 0.25em 0.5em;
+  max-height: 4rem;
   border: 3px dotted var(--dark-gingerbread-brown);
+}
+
+button:hover {
+  font-size: 1.75em;
 }
 
 .slide-nav {
   text-align: center;
+  padding: 0.5em;
 }
 
 .slide-map {
