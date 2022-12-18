@@ -1,9 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import SlideNav from './SlideNav';
 
 function Slideshow({ components, slideIndex, routeName }) {
   const slideLocations = components.map(
-    (_, index) => <span key={`slide-index-${index}`}>{index === slideIndex ? ' O ' : ' o '}</span>
+    (_, index) => <span key={`slide-index-${index}`} className='slide-map'>{index === slideIndex ? ' O ' : ' o '}</span>
   );
   const navigate = useNavigate();
 
@@ -16,12 +17,9 @@ function Slideshow({ components, slideIndex, routeName }) {
 
   return (
     <div>
+      <SlideNav slideLocations={slideLocations} handleSlideChange={handleSlideChange} />
       {components[slideIndex]}
-      <div>
-        <button onClick={() => handleSlideChange(-1)}>{'<'}</button>
-        {slideLocations}
-        <button onClick={() => handleSlideChange(1)}>{'>'}</button>
-      </div>
+      <SlideNav slideLocations={slideLocations} handleSlideChange={handleSlideChange} />
     </div>
   )
 }

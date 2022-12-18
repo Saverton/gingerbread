@@ -86,3 +86,20 @@ img {
   align-items: center;
   width: 100%;
 }
+
+button {
+  background-color: var(--gingerbread-brown);
+  color: inherit;
+  font-family: inherit;
+  font-size: 1.5em;
+  padding: 0.25em 0.5em;
+  border: 3px dotted var(--dark-gingerbread-brown);
+}
+
+.slide-nav {
+  text-align: center;
+}
+
+.slide-map {
+  margin: 0 0.5em;
+}
