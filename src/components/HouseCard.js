@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import CONTESTANTS from '../data/contestants';
+import Tallmanometer from './Tallmanometer';
 
 function HouseCard({ data }) {
   const { designerId, imageUrl, points } = data;
@@ -21,13 +22,9 @@ function HouseCard({ data }) {
     }
   }
 
-  function getTotalPoints() {
-    return Object.values(points).reduce((sum, element) => sum + element, 0);
-  }
+  
 
-  const pointBreakdown = Object.keys(points).map(
-    (scoringCategory, index) => <p key={`scoring-${index}`}>{scoringCategory} : {Object.values(points)[index]}</p>
-  );
+  
 
   return (
     <article className='card'>
@@ -38,8 +35,7 @@ function HouseCard({ data }) {
       <div className='card-details'>
         <p>Materials : EMPTY</p>
         <Link to={`/contestants/${designerId}`}>Meet The Designer</Link>
-        <h3>Points : {getTotalPoints()}/50</h3>
-        {pointBreakdown}
+        <Tallmanometer points={points} />
       </div>
     </article>
   );
