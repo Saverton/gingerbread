@@ -22,6 +22,10 @@ h1, h2, h3, h4 {
   text-align: center;
 }
 
+ul {
+  margin: 0 0 1rem 0;
+}
+
 p {
   margin: 0.5em auto;
   font-size: 1.25em;
@@ -38,6 +42,7 @@ nav {
 a, button {
   color: var(--frosting-white);
   transition: 0.5s;
+  text-decoration: none;
 }
 
 a:hover {
@@ -95,7 +100,7 @@ img {
   width: 100%;
 }
 
-button {
+button, .card-details a {
   background-color: var(--gingerbread-brown);
   color: inherit;
   font-family: inherit;
@@ -105,8 +110,14 @@ button {
   border: 3px dotted var(--dark-gingerbread-brown);
 }
 
-button:hover {
+button:hover, .card-details a:hover {
   font-size: 1.75em;
+}
+
+.card-details a {
+  background-color: var(--dark-gingerbread-brown);
+  border: 3px dotted var(--gingerbread-brown);
+  border-radius: 0.5em;
 }
 
 .slide-nav {
@@ -125,6 +136,7 @@ button:hover {
   text-align: center;
   padding: 0.5em;
   position: relative;
+  margin-top: 3em;
 }
 
 .tallmanometer-button {
@@ -177,5 +189,13 @@ th {
 
 tr:last-of-type {
   font-weight: bold;
+  text-decoration: underline;
+}
+
+.right {
+  text-align: right;
+}
+
+.active {
   text-decoration: underline;
 }

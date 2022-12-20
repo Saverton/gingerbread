@@ -37,7 +37,7 @@ const CONTESTANTS = [
     imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC4KmBaehR0ZHUcqSm3cLxL4OWJO1Pbef-Ag&usqp=CAU',
     imageCaption: 'Artist Rendition',
     houseId: 4,
-    quote: 'https://www.youtube.com/watch?v=z8x2fAE0h3w',
+    quote: 'We\'ll be gracious and encouraging when they deserve it.',
     placed: '5th'
   }
 ]

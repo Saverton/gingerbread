@@ -13,7 +13,8 @@ function ContestantCard({ data }) {
       <div className='card-details'>
         <h2>{name}</h2>
         <Link to={`/houses/${houseId}`}>See {`${name}'s`} House</Link>
-        <p><em>{quote}</em> - {name}</p>
+        <p><em>{quote}</em></p>
+        <p className='right'> - {name}</p>
         <h3>Placed : {placed}</h3>
       </div>
     </article>

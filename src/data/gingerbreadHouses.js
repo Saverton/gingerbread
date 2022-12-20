@@ -9,7 +9,15 @@ const HOUSES = [
       landscaping: 10,
       aesthetics: 10,
       imagniation: 9,
-    }
+    },
+    materials: [
+      'Gingerbread',
+      'Frosting Cement',
+      'Variety of Spice/Gum Drops',
+      'Variety of Sprinkles',
+      'Hard Candy',
+      'Chocolate'
+    ]
   },
   {
     id: 1,
@@ -21,7 +29,15 @@ const HOUSES = [
       landscaping: 3,
       aesthetics: 5,
       imagniation: 5,
-    }
+    },
+    materials: [
+      'Gingerbread',
+      'Frosting Cement',
+      'Variety of Spice/Gum Drops',
+      'Variety of Sprinkles',
+      'Hard Candy',
+      'Chocolate'
+    ]
   },
   {
     id: 2,
@@ -33,7 +49,15 @@ const HOUSES = [
       landscaping: 7,
       aesthetics: 6,
       imagniation: 6,
-    }
+    },
+    materials: [
+      'Gingerbread',
+      'Frosting Cement',
+      'Variety of Spice/Gum Drops',
+      'Variety of Sprinkles',
+      'Hard Candy',
+      'Chocolate'
+    ]
   },
   {
     id: 3,
@@ -45,7 +69,15 @@ const HOUSES = [
       landscaping: 3,
       aesthetics: 7,
       imagniation: 7,
-    }
+    },
+    materials: [
+      'Gingerbread',
+      'Frosting Cement',
+      'Variety of Spice/Gum Drops',
+      'Variety of Sprinkles',
+      'Hard Candy',
+      'Chocolate'
+    ]
   },
   {
     id: 4,
@@ -57,7 +89,15 @@ const HOUSES = [
       landscaping: 0,
       aesthetics: 1,
       imagniation: 10,
-    }
+    },
+    materials: [
+      'Inedible Cardboard',
+      'Inedible Hot Glue',
+      'Cheerios',
+      'Pretzels',
+      'Graham Crackers',
+      'NOT INCLUDED: Gingerbread'
+    ]
   }
 ]
 
