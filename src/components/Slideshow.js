@@ -19,9 +19,7 @@ function Slideshow({ components, slideIndex, routeName }) {
     <div className='slideshow'>
       <SlideNav slideLocations={slideLocations} handleSlideChange={handleSlideChange} />
       {components[slideIndex]}
-      <div className='static'>
-        <SlideNav slideLocations={slideLocations} handleSlideChange={handleSlideChange} />
-      </div>
+      <SlideNav slideLocations={slideLocations} handleSlideChange={handleSlideChange} />
     </div>
   )
 }
