@@ -16,10 +16,12 @@ function Slideshow({ components, slideIndex, routeName }) {
   }
 
   return (
-    <div>
+    <div className='slideshow'>
       <SlideNav slideLocations={slideLocations} handleSlideChange={handleSlideChange} />
       {components[slideIndex]}
-      <SlideNav slideLocations={slideLocations} handleSlideChange={handleSlideChange} />
+      <div className='static'>
+        <SlideNav slideLocations={slideLocations} handleSlideChange={handleSlideChange} />
+      </div>
     </div>
   )
 }
