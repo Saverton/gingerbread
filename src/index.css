@@ -10,7 +10,8 @@ html {
 
 body {
   margin: 0px;
-  background-color: red;
+  background: url('https://img.freepik.com/premium-vector/winter-season-snowscape_18591-74599.jpg?w=2000');
+  background-size: auto;
   font-family: 'Comic Sans MS', 'Comic Sans';
   color: var(--frosting-white);
   height: 100%;
@@ -29,6 +30,15 @@ header, footer {
   border: 5px solid var(--frosting-white);
   border-radius: 0.5em;
   text-align: center;
+  position: sticky;
+}
+
+header {
+  top: 0px;
+}
+
+footer {
+  bottom: 0px;
 }
 
 h1, h2, h3, h4 {
@@ -151,7 +161,7 @@ button:hover, .card-details a:hover {
   text-align: center;
   padding: 0.5em;
   position: relative;
-  margin-top: 3em;
+  margin-top: 5.5rem;
 }
 
 .tallmanometer-button {
@@ -220,4 +230,27 @@ tr:last-of-type {
   flex-direction: column;
   justify-content: space-between;
   min-height: 90%;
+}
+
+@media (orientation: portrait) {
+  main {
+    width: 90%;
+  }
+
+  article {
+    padding: 0.25rem 0.75rem;
+    margin: 0.5rem 0.5rem;
+  }
+  
+  p {
+    width: fit-content
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  figure {
+    margin: 0;
+  }
 }

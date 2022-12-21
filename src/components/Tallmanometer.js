@@ -34,7 +34,7 @@ function Tallmanometer({ points }) {
       <div className='tallmanometer-button'></div>
       <div className='tallmanometer-antenna'></div>
       <div className='tallmanometer-antenna-bulb'></div>
-      <h3>--- Tallman-ometer ---</h3>
+      <h3>Tallman-ometer</h3>
       <meter value={getTotalPoints()} min="0" max="50" low="25"></meter>
       <table>
         <thead>
