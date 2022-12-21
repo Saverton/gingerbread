@@ -233,6 +233,14 @@ tr:last-of-type {
 }
 
 @media (orientation: portrait) {
+  nav a {
+    font-size: 0.75rem;
+  }
+
+  nav a:hover {
+    font-size: 0.9rem;
+  }
+
   main {
     width: 90%;
     overflow: auto;
