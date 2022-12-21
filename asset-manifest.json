@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/gingerbread/static/css/main.c6339731.css",
+    "main.css": "/gingerbread/static/css/main.34c48774.css",
     "main.js": "/gingerbread/static/js/main.7afe2356.js",
     "static/js/787.62089606.chunk.js": "/gingerbread/static/js/787.62089606.chunk.js",
     "index.html": "/gingerbread/index.html",
-    "main.c6339731.css.map": "/gingerbread/static/css/main.c6339731.css.map",
+    "main.34c48774.css.map": "/gingerbread/static/css/main.34c48774.css.map",
     "main.7afe2356.js.map": "/gingerbread/static/js/main.7afe2356.js.map",
     "787.62089606.chunk.js.map": "/gingerbread/static/js/787.62089606.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6339731.css",
+    "static/css/main.34c48774.css",
     "static/js/main.7afe2356.js"
   ]
 }
