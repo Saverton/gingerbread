@@ -26,7 +26,7 @@ function HouseCard({ data }) {
   return (
     <article className='card'>
       <figure>
-        <img src={imageUrl} alt={`${designer.name}'s House`} />
+        <img src={process.env.PUBLIC_URL + imageUrl} alt={`${designer.name}'s House`} />
         <figcaption>{`${designer.name}'s ${materials[0]} ${getPlaceMessage(designer.placed)}`}</figcaption>
       </figure>
       <div className='card-details'>
