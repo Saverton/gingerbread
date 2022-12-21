@@ -12,7 +12,7 @@ const CONTESTANTS = [
     name: 'Landen F.',
     imageUrl: '/images/contestants/02.jpeg',
     houseId: 1,
-    quote: '😂😂😂',
+    quote: 'I asked, "Lauren, what did you guys use to put your cardboard together?", she responded "frosting"😂😂😂',
     placed: '4th'
   },
   {
@@ -20,7 +20,7 @@ const CONTESTANTS = [
     name: 'Ben K.',
     imageUrl: '/images/contestants/03.jpeg',
     houseId: 2,
-    quote: 'PLACEHOLDER',
+    quote: 'When in the fiercest of competitions, be sure to employ the most just judges.',
     placed: '2nd'
   },
   {
