@@ -22,7 +22,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 header, footer {
@@ -235,6 +235,7 @@ tr:last-of-type {
 @media (orientation: portrait) {
   main {
     width: 90%;
+    overflow: auto;
   }
 
   article {
@@ -252,5 +253,9 @@ tr:last-of-type {
 
   figure {
     margin: 0;
+  }
+
+  header, footer {
+    position: static;
   }
 }
